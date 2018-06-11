@@ -1,0 +1,82 @@
+body {
+    padding:1em;
+    font-family:"Arial";
+    color:#666;
+    font-size:18pt;
+}
+form {
+    max-width:800px;
+    margin:0 auto;
+}
+input[type="text"] {
+    font-size:12pt;
+    color:#1F4256;
+    padding:8px;
+    font-family:"Arial";
+    margin-left:0.6em;
+}
+input[type="text"]:focus {
+    border:2px solid #EF5B6A;
+    outline:none;
+}
+input[type="checkbox"] {
+    float:left;
+    margin-left:4em;
+}
+input.no_indent {
+    margin-left:0;
+}
+label.checkbox_label {
+    display:block;
+    margin:-0.3em 0 0 0.6em;
+    float:left;
+}
+.form_group, #library_list {
+    display:block;
+    margin:1em 0.5em;
+}
+#gdi_course {
+    font-size:11pt;
+}
+#library_list, .hidden_gdi_course_content {
+    display:none;
+}
+hr {
+    border:0;
+    border-top:2px solid #d8ae64;
+    border-bottom:2px solid #d8ae64;
+    margin-bottom:30px;
+    height:6px;
+    background:transparent;
+}
+input[type='submit'] {
+    background-color:#EF5B6A;
+    color:#fff;
+    font-family:"Arial";
+    font-size:16pt;
+    outline:0;
+    border:0;
+    padding:1em;
+    text-transform:uppercase;
+    -webkit-transition: 0.1s 0.1s;
+    -moz-transition: 0.1s 0.1s;
+    -ms-transition: 0.1s 0.1s;
+    -o-transition: 0.1s 0.1s;
+    transition: 0.1s 0.1s;
+}
+input[type='submit']:hover {
+    background-color:#1F4256;
+    cursor:pointer;
+}
+label.checked_label {
+    color:#EF5B6A;
+}
+.clear {
+    clear:both;
+}
+.hidden_gdi_course_content {
+    margin-left:2em;
+    font-size:14pt;
+    text-transform:uppercase;
+    margin-bottom:2em;
+}

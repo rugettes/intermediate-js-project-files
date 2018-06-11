@@ -1,0 +1,39 @@
+#counter {
+    font-size:100pt;
+    width:60%;
+    margin:0 auto;
+}
+#counter button {
+    background-color:#2a4758;
+    color:#fff;
+    font-size:60pt;
+    width:120px;
+    outline:0;
+    border:0;
+    padding-bottom:20px;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -ms-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    transition: all 0.1s;
+}
+#counter button:hover {
+    cursor:pointer;
+    background-color:#d9b06f;
+}
+#counter button:active {
+    transform: scale(0.95);
+}
+#result {
+    width:100%;
+    text-align:center;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+#result.changing {
+    color:#f95a61;
+    transform: scale(1.2);
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>GDI - Intermediate JS - Form!</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	<!-- Include jQuery that's in the lib directory -->
+	<script src="../lib/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+	<form action="MAILTO:amy@gdiminneapolis.com" method="post" enctype="text/plain">
+
+		<div class="form_group">
+			<label for="name">Name</label>
+			<input type="text" name="name" id="name" />
+		</div>
+
+		<hr />
+
+		<div class="form_group">
+			<input type="checkbox" name="like_libraries" id="like_libraries" class="no_indent" />
+			<label for="like_libraries" class="checkbox_label">I like JavaScript libraries</label>
+		</div>
+
+		<div class="clear"></div>
+
+		<div id="library_list">
+			<div class="form_group">
+				<input type="checkbox" name="jquery" id="jquery" />
+				<label for="jquery" class="checkbox_label">jQuery</label>
+				<input type="checkbox" name="jqueryui" id="jqueryui" />
+				<label for="jqueryui" class="checkbox_label">jQuery UI</label>
+			</div>
+			<div class="form_group">
+				<input type="checkbox" name="momentjs" id="momentjs" />
+				<label for="momentjs" class="checkbox_label">MomentJS</label>
+				<input type="checkbox" name="angular" id="angular" />
+				<label for="angular" class="checkbox_label">Angular</label>
+			</div>
+			<div class="clear"></div>
+		</div>
+
+		<hr />
+
+		<div class="form_group">
+			<label for="gdi_course">The next Girl Develop It class I'm taking is</label>
+			<br />
+			<select id="gdi_course" name="gdi_course">
+				<option value="none"></option>
+				<option value="wordpress">Intro to WordPress</option>
+				<option value="php">Practical PHP Primer</option>
+				<option value="instructor">GDI Instructor 101</option>
+			</select>
+		</div>
+
+		<div class="hidden_gdi_course_content" id="wordpress">Saturday, June 16.</div>
+		<div class="hidden_gdi_course_content" id="php">3 Week Series Starting July 18.</div>
+		<div class="hidden_gdi_course_content" id="instructor">TBD</div>
+
+		<hr />
+
+		<input type="submit" value="submit" />
+
+	</form>
+
+	<!-- The link to our scripts.js file in this form directory -->
+	<script src="scripts.js"></script>
+
+</body>
+
+</html>
