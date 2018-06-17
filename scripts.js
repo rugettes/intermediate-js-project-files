@@ -1,7 +1,3 @@
-function _getElement (id) {
-  return document.getElementById(id)
-}
-
 function counterPop () {
   result.className = 'changing'
   setTimeout(function () {
@@ -9,9 +5,8 @@ function counterPop () {
   }, 200)
 }
 
-const result = _getElement('result')
-const subtract = _getElement('subtract')
-const add = _getElement('add')
+const result = document.getElementById('result')
+const buttons = document.getElementsByTagName('button')
 
 add.addEventListener('click', function () {
   console.log(`Hey, world, this is ${add.innerHTML}`)
