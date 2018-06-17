@@ -8,14 +8,14 @@ function counterPop () {
 const result = document.getElementById('result')
 const buttons = document.getElementsByTagName('button')
 
-add.addEventListener('click', function () {
-  console.log(`Hey, world, this is ${add.innerHTML}`)
-  result.innerHTML++
-  counterPop()
-})
-
-subtract.addEventListener('click', function () {
-  console.log(`Hey, world, this is ${subtract.innerHTML}`)
-  result.innerHTML--
-  counterPop()
-})
+for (let i = 0; i < buttons.length; i++) {
+  const button = buttons[i]
+  button.addEventListener('click', function () {
+    if (this.innerHTML === '+') {
+      result.innerHTML++
+    } else if (this.innerHTML === '-') {
+      result.innerHTML--
+    }
+    counterPop()
+  })
+}
